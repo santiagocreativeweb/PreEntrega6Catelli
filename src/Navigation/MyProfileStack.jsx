@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Header from "../Components/Header";
 import MyProfile from "../Screens/MyProfile";
 import ImageSelector from "../Screens/ImageSelector";
-import User  from "../Screens/User";
+import User  from "../Screens/UserScreen";
 
 const Stack = createNativeStackNavigator();
 

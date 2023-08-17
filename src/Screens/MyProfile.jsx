@@ -45,9 +45,9 @@ const MyProfile = ({navigation}) => {
             )}
             <Text style={styles.nombre} >Santiago Catelli</Text>
             <View>
-            <TouchableOpacity style={styles.button} onPress={nombreUsuario}>
+{/*             <TouchableOpacity style={styles.button} onPress={nombreUsuario}>
                 <Text style={styles.buttonText}>Agregar Nombre de usuario</Text>
-            </TouchableOpacity>
+            </TouchableOpacity>  PROXIMA MENTE EN LA ENTREGA FINAL */} 
             <TouchableOpacity style={styles.button} onPress={launchCamera}>
                 <Text style={styles.buttonText}>Agregar Imagen de perfil</Text>
             </TouchableOpacity>

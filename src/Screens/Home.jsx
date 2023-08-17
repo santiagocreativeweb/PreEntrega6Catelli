@@ -7,7 +7,7 @@ import { useGetCategoriesQuery } from '../Services/shopServices'
 const Home = ({
   navigation
 }) => {
-  const {data: categories, isLoading, isError} = useGetCategoriesQuery()
+  const {data: categories} = useGetCategoriesQuery()
   
   return (
     <View style={styles.container}>
@@ -16,10 +16,8 @@ const Home = ({
             keyExtractor={category => category}
             renderItem={({item}) => <CategoryItem item={item} navigation = {navigation}/>}
             showsVerticalScrollIndicator={false}
-            showsHorizontalScrollIndicator={false}
             contentContainerStyle={styles.wrapper}
-            horizontal={true}
-            style={styles.flatlist}
+            horizontal={false}
         />
     </View>
   )
@@ -29,9 +27,11 @@ export default Home
 
 const styles = StyleSheet.create({
     wrapper: {
-      gap: 20,
+      gap: 5,
     },
     container: {
-        alignItems: 'center',
+        display: "flex",
+        alignItems: 'center'
+
     },
 })

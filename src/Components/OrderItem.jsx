@@ -44,11 +44,11 @@ const styles = StyleSheet.create({
     text: {
         fontFamily: "Poppins-Medium",
         fontSize: 17,
-        color: "black",
+        color: "white",
     },
     text2: {
         fontFamily: "Poppins-Medium",
         fontSize: 19,
-        color: "red",
-    },
+        color: "white",
+    }
 });
